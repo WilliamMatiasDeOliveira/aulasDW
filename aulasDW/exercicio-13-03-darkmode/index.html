@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>DarkMode</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar">
+        <div class="logo">Logo legal</div>
+
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <!-- botão dark mode -->
+        <div onclick="toggleDarkMode()" class="dark-mode-toggle">Dark Mode</div>
+    </nav>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Card 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus velit dignissimos laudantium odio!
+                    Numquam voluptatibus sint adipisci quia deserunt ex dolorem quas, quaerat possimus tempora explicabo
+                    doloremque nihil quidem nemo.
+                </p>
+            </div> <!--FIM Card 1-->
+            <div class="card">
+                <h3>Card 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus velit dignissimos laudantium odio!
+                    Numquam voluptatibus sint adipisci quia deserunt ex dolorem quas, quaerat possimus tempora explicabo
+                    doloremque nihil quidem nemo.
+                </p>
+            </div> <!--FIM Card 2-->
+            <div class="card">
+                <h3>Card 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus velit dignissimos laudantium odio!
+                    Numquam voluptatibus sint adipisci quia deserunt ex dolorem quas, quaerat possimus tempora explicabo
+                    doloremque nihil quidem nemo.
+                </p>
+            </div> <!--FIM Card 3-->
+        </section><!--FIM CARDS-->
+
+    <footer>
+        <p>William Matias de Oliveira &copy;</p>
+    </footer>
+
+    <!-- script js -->
+     <script src="js/scrypt.js"></script>
+
+     <!-- script function dark mode -->
+      <script>
+        function toggleDarkMode(){
+            document.body.classList.toggle('dark-mode')
+        }
+      </script>
+
+</body>
+
+</html>
