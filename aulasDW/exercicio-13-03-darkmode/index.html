@@ -12,7 +12,9 @@
 <body>
     <!-- nav bar -->
     <nav class="navbar">
-        <div class="logo">Logo legal</div>
+        <div class="logo">
+            <img src="imgs/logo.png" id="logo" alt="logo da empresa">
+        </div>
 
         <ul>
             <li><a href="#">Inicio</a></li>
@@ -23,43 +25,45 @@
         <div onclick="toggleDarkMode()" class="dark-mode-toggle">Dark Mode</div>
     </nav>
 
-        <section class="cards">
-            <div class="card">
-                <h3>Card 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus velit dignissimos laudantium odio!
-                    Numquam voluptatibus sint adipisci quia deserunt ex dolorem quas, quaerat possimus tempora explicabo
-                    doloremque nihil quidem nemo.
-                </p>
-            </div> <!--FIM Card 1-->
-            <div class="card">
-                <h3>Card 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus velit dignissimos laudantium odio!
-                    Numquam voluptatibus sint adipisci quia deserunt ex dolorem quas, quaerat possimus tempora explicabo
-                    doloremque nihil quidem nemo.
-                </p>
-            </div> <!--FIM Card 2-->
-            <div class="card">
-                <h3>Card 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus velit dignissimos laudantium odio!
-                    Numquam voluptatibus sint adipisci quia deserunt ex dolorem quas, quaerat possimus tempora explicabo
-                    doloremque nihil quidem nemo.
-                </p>
-            </div> <!--FIM Card 3-->
-        </section><!--FIM CARDS-->
+    <section class="cards">
+        <div class="card">
+            <h3>Card 1</h3>
+           <img src="imgs/img1.jpg" alt="">
+        </div> <!--FIM Card 1-->
+        <div class="card">
+            <h3>Card 2</h3>
+            <img src="imgs/img2.jpg" alt="">
+        </div> <!--FIM Card 2-->
+        <div class="card">
+            <h3>Card 3</h3>
+           <img src="imgs/img3.jpg" alt="">
+        </div> <!--FIM Card 3-->
+    </section><!--FIM CARDS-->
 
     <footer>
         <p>William Matias de Oliveira &copy;</p>
     </footer>
 
     <!-- script js -->
-     <script src="js/scrypt.js"></script>
+    <script src="js/scrypt.js"></script>
 
-     <!-- script function dark mode -->
-      <script>
-        function toggleDarkMode(){
-            document.body.classList.toggle('dark-mode')
+    <!-- script function dark mode -->
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+
+            let logo = document.getElementById('logo');
+            let lightLogo = "imgs/logo.png";
+            let darkLogo = "imgs/logo-dark.png";
+
+            if (document.body.classList.contains('dark-mode')) {
+                logo.src = darkLogo;
+            } else {
+                logo.src = lightLogo;
+            }
         }
-      </script>
+
+    </script>
 
 </body>
 
